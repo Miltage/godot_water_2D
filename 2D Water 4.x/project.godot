@@ -1,0 +1,30 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "Node",
+"class": &"Spring",
+"language": &"GDScript",
+"path": "res://Spring.gd"
+}]
+_global_script_class_icons={
+"Spring": ""
+}
+
+[application]
+
+config/name="2D Water Demo 4.x"
+run/main_scene="res://scenes/Root.tscn"
+config/icon="res://icon.png"
+config/features=PackedStringArray("4.0", "Vulkan Clustered")
+
+[display]
+
+window/stretch/mode="viewport"

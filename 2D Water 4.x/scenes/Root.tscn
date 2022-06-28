@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://bd5hkmpfk667m"]
+
+[ext_resource type="Script" path="res://scripts/Root.gd" id="1_vaxba"]
+[ext_resource type="Texture2D" uid="uid://s8ecnwkdg0qj" path="res://sky.jpg" id="2_i3str"]
+[ext_resource type="Script" path="res://scripts/Water.gd" id="3_0yuld"]
+[ext_resource type="Texture2D" uid="uid://c87gre42mlbch" path="res://ducky.png" id="4_c7miu"]
+[ext_resource type="Script" path="res://scripts/Ducky.gd" id="5_yewdp"]
+
+[node name="Root" type="Node2D"]
+script = ExtResource( "1_vaxba" )
+
+[node name="Sky" type="Sprite2D" parent="."]
+position = Vector2(451, 112)
+texture = ExtResource( "2_i3str" )
+
+[node name="Ducky" type="Sprite2D" parent="."]
+position = Vector2(333, 77.2481)
+rotation = -0.158825
+texture = ExtResource( "4_c7miu" )
+offset = Vector2(0, -24)
+script = ExtResource( "5_yewdp" )
+
+[node name="Ducky2" type="Sprite2D" parent="."]
+position = Vector2(730, 148)
+rotation = -0.158825
+texture = ExtResource( "4_c7miu" )
+offset = Vector2(0, -24)
+script = ExtResource( "5_yewdp" )
+
+[node name="Water" type="Node2D" parent="."]
+script = ExtResource( "3_0yuld" )
